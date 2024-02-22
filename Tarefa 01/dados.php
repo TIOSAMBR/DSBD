@@ -3,7 +3,7 @@ session_start();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $_SESSION["produto"] = $_POST;
-    header("Location: dados.php");
+    echo '<a href="dados.php">Visualizar dados</a>';
     exit;
 }
 
